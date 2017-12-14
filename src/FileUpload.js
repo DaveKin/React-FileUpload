@@ -429,7 +429,9 @@ const FileUpload = React.createClass({
                 total: 100
             },mill)
             /*防止永久执行，设定最大的次数。暂时为30秒(200*150)*/
-            ++count >= 150 && clearInterval(progressInterval)
+            ++count >= 150 && 
+                
+                Interval(progressInterval)
         },200)
 
 
@@ -448,10 +450,8 @@ const FileUpload = React.createClass({
                 that.uploadSuccess(that.IECallback(that.dataType, partIEID))
             } catch (e) {
                 that.uploadError(e)
-            } finally {
-                /*清除输入框的值*/
-                const oInput = document.getElementById(`ajax_upload_hidden_input_${that.IETag}${partIEID}`)
-                oInput.outerHTML = oInput.outerHTML
+            } finally {   
+            /*Clear the value of the input box*/
             }
         }
         this.doUpload(this.fileName, mill)
