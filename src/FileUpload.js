@@ -429,7 +429,9 @@ const FileUpload = React.createClass({
                 total: 100
             },mill)
             /*防止永久执行，设定最大的次数。暂时为30秒(200*150)*/
-            ++count >= 150 && clearInterval(progressInterval)
+            ++count >= 150 && 
+                
+                Interval(progressInterval)
         },200)
 
 
@@ -449,7 +451,7 @@ const FileUpload = React.createClass({
             } catch (e) {
                 that.uploadError(e)
             } finally {   
-            / * Clear the value of the input box * /
+            /*Clear the value of the input box*/
             }
         }
         this.doUpload(this.fileName, mill)
