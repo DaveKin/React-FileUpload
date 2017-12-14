@@ -1,30 +1,27 @@
 {
-  "name": "react-fileupload",
-  "version": "2.4.0",
-  "description": "Upload files async with xhr2 or iframe for IE. Supporting IE8+. Doing well in Tencent.",
+  "name": "file-upload-react",
+  "version": "1.0.0",
+  "description": "React file upload component supporting IE8+",
   "main": "dist/main.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",    
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "build:watch": "npm run build -- -w",
     "start": "npm run build:watch"
-  },  
+  },
   "keywords": [
     "upload",
     "react",
     "file",
-    "ajax",
-    "xhr",
-    "async",
     "react-component"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/SoAanyip/React-FileUpload.git"
+    "url": "https://github.com/igreulich/React-FileUpload.git"
   },
-  "author": "Cheesu@Tencent",
+  "author": "Ian Greulich after Cheesu@Tencent",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^15.0.2"
   },
   "devDependencies": {
@@ -37,6 +34,6 @@
     "webpack": "^1.12.14"
   },
   "bugs": {
-    "url": "https://github.com/SoAanyip/React-FileUpload/issues"
+    "url": "https://github.com/igreulich/React-FileUpload/issues"
   }
 }

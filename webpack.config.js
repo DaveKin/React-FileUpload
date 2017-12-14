@@ -6,7 +6,7 @@ var sharedConfig = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
-        library: 'react-fileupload',
+        library: 'file-upload-react',
         libraryTarget: 'umd'
     },
     module:{
@@ -15,7 +15,7 @@ var sharedConfig = {
             loader: "babel",
             query: {
               presets: ['react','es2015']
-            }            
+            }
         }]
     },
     externals: [{
@@ -36,14 +36,14 @@ var devBundleConfig = Object.assign({}, sharedConfig, {
     entry: {
         'main': entry
     }
-}); 
+});
 
 var prodBundleConfig = Object.assign({}, sharedConfig, {
     entry: {
-        'main.min': entry 
+        'main.min': entry
     },
     plugins: [
-        new webpack.optimize.OccurenceOrderPlugin(),        
+        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             compressor: {
             screw_ie8: true,
