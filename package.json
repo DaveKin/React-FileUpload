@@ -24,7 +24,7 @@
   },
   "author": "Cheesu@Tencent",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^15.0.2"
   },
   "devDependencies": {
