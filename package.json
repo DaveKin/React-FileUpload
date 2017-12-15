@@ -44,6 +44,6 @@
     "url": "https://github.com/igreulich/React-FileUpload/issues"
   },
   "peerDependencies": {
-    "react": "^15.6"
+    "react": "^15.6.x"
   }
 }
