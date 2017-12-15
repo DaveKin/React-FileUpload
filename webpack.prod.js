@@ -8,7 +8,7 @@ const PATHS = {
 
 module.exports = {
   entry: {
-    'file-upload-react': [`${PATHS.src}/file-upload-react.js`],
+    'file-upload-react.min': [`${PATHS.src}/file-upload-react.js`],
   },
   output: {
     path: PATHS.dist,
@@ -32,7 +32,8 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
-      compressor: { screw_ie8: false, warnings: false },
+      ie8: true,
+      warnings: false
     }),
   ]
 };
