@@ -10,6 +10,7 @@
 
 /*eslint indent: 0 */
 const React = require('react')
+const PropTypes = require('prop-types')
 const emptyFunction = function() {}
 /*当前IE上传组的id*/
 let currentIEID = 0
@@ -19,7 +20,7 @@ const IEFormGroup = [true]
 let xhrList = []
 let currentXHRID = 0
 
-const PT = React.PropTypes
+const PT = PropTypes
 
 const FileUpload = React.createClass({
 
