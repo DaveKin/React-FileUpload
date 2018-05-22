@@ -18,6 +18,10 @@
     "type": "git",
     "url": "https://github.com/igreulich/React-FileUpload.git"
   },
+  "dependencies": {
+    "prop-types": "15.5.10",
+    "react": "^15.6.1"
+  },
   "author": {
     "name": "Ian Greuilich",
     "email": "ian@greulich.me"
