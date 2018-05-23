@@ -19,8 +19,8 @@
     "url": "https://github.com/igreulich/React-FileUpload.git"
   },
   "dependencies": {
-    "prop-types": "15.5.10",
-    "react": "^15.6.1"
+    "prop-types": "15.6.1",
+    "react": "^16.3.2"
   },
   "author": {
     "name": "Ian Greuilich",
@@ -48,6 +48,6 @@
     "url": "https://github.com/igreulich/React-FileUpload/issues"
   },
   "peerDependencies": {
-    "react": "^15.6.x"
+    "react": "^16.x.x"
   }
 }
