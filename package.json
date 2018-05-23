@@ -19,6 +19,7 @@
     "url": "https://github.com/igreulich/React-FileUpload.git"
   },
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "prop-types": "15.6.1",
     "react": "^16.3.2"
   },
